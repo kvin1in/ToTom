@@ -15,13 +15,13 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 450px;
 }
 
 #slides ul {
     list-style: none;
     width: 100%;
-    height: 250px;
+    height: 450px;
     margin: 0;
     padding: 0;
     position: relative;
@@ -29,7 +29,7 @@
 
 #slides li {
     width: 100%;
-    height: 250px;
+    height: 450px;
     float: left;
     text-align: center;
     position: relative;
