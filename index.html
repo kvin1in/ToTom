@@ -1,0 +1,91 @@
+--- 
+layout: default 
+title: Home Page 
+---
+<div class="android-content mdl-layout__content">
+        <a name="top"></a>
+        <div class="android-be-together-section mdl-typography--text-center">
+          <div class="logo-font android-slogan">Красота - это простота доведенная до совершенства.</div>
+          <div class="logo-font android-sub-slogan"></div>
+          
+
+          <a href="#screens">
+            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+              <i class="material-icons">expand_more</i>
+            </button>
+          </a>
+        </div>
+           <div class="android-screen-section mdl-typography">
+          <a name="screens"></a>
+         <!-- Slider start -->
+        <div id="carousel">
+            <div class="btn-bar" style="visibility: hidden">
+                <div id="buttons">
+                    <a id="prev" href="#">
+                        <</a><a id="next" href="#">></a> </div>
+            </div>
+            <div id="slides">
+                <ul>
+                    <li class="slide">
+                        <div class="quoteContainer">
+                            <p class="quote-phrase"><span class="quote-marks">"</span> Самое прекрасное - стремление сделать что-то необыкновенное.
+                                <class="quote-marks">"</span>
+
+                            </p>
+                        </div>
+                        <div class="authorContainer">
+                            <p class="quote-author">Георгий Бурков</p>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <div class="quoteContainer">
+                            <p class="quote-phrase"><span class="quote-marks">"</span> Жизнь – это широкая, ухабистая, бесконечная дорога. И вот по этой дороге идут люди. Одни чуть впереди, другие чуть поотстали.
+                                <span class="quote-marks">"</span>
+
+                            </p>
+                        </div>
+                        <div class="authorContainer">
+                            <p class="quote-author">Георгий Бурков</p>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <div class="quoteContainer">
+                            <p class="quote-phrase"><span class="quote-marks">"</span>Когда тебе бессовестно говорят неправду, в тебе все возмущается. Задето сердце. Когда же тебе говорят правду, страдает самолюбие. Оно точит тебя, и ты задыхаешься в бессильной злобе.<span class="quote-marks">"</span>
+
+                            </p>
+                        </div>
+                        <div class="authorContainer">
+                            <p class="quote-author">Георгий Бурков</p>
+                        </div>
+                    </li>
+                </ul>
+            </div><!-- Slider end -->
+          
+           </div><!-- end android section -->
+
+<div class="android-more-section">
+          <div class="android-section-title mdl-typography--display-1-color-contrast">Новости</div>
+          <div class="android-card-container mdl-grid">
+               {% for post in site.posts %}
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="{{ post.img }}">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">{{ post.title }}</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">{{post.subtitle}}</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ site.baseurl }}{{ post.url }}">
+                   Больше
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>		      
+	</div>		
+			
