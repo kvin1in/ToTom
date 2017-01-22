@@ -182,6 +182,13 @@ a img {
     font-weight: 500;
 }
 
+.logo-font-1 {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1;
+    color: #212121;
+    font-weight: 500;
+}
+
 .android-slogan {
     font-size: 60px;
     padding-top: 160px;
