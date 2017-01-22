@@ -172,14 +172,13 @@ a img {
     height: 800px;
     width: auto;
     background-color: #f3f3f3;
-    background: url('https://scontent.fhen1-1.fna.fbcdn.net/v/t1.0-9/10731145_1624627727754262_83680570017787976_n.jpg?oh=82fbfedfdcfcf4a753115aa23689a2a4&oe=59235CCF') center no-repeat;
     background-size: cover;
 }
 
 .logo-font {
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     line-height: 1;
-    color: #212121;
+    color: #fff;
     font-weight: 500;
 }
 
