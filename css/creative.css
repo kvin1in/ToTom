@@ -158,7 +158,7 @@ a img {
 
 .android-drawer .mdl-layout-title {
     position: relative;
-    background: #6ab344;
+    background: black;
     height: 160px;
 }
 
@@ -521,5 +521,11 @@ a img {
     }
     .android-footer .mdl-mega-footer--bottom-section {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mdl-layout__drawer>.mdl-layout-title {
+        padding-left: 40px;
     }
 }
